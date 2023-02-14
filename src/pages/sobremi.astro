@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<sobremi title="benja">
+    <main>
+        <div class="barra"><img src="" alt="" /></div>
+        <nav id="navlab">
+            <div id="logo"></div>
+        </nav>
+    </main>
+    <div class="logo">
+        <img src="/ah-removebg-preview.png" alt="logo" class="logo" />
+    </div>
+    <div class="image_container">
+        <a href="/"
+            ><img
+                src="public/aosaoaoskoas-removebg-preview (1).png"
+                alt="volver cara mema"
+                width="150px"
+            /></a
+        >
+    </div>
+    <h1>Sobre mi:</h1>
+    <h2>by b.s.b.</h2>
+    <h3>
+        soy un alumno del cet 1, voy a informatica y mi curso es tercero
+        tercera.me gusta el basquet, tambien me gusta jugar a la compu y
+        cocinar, quiero estudiar criminologia y ciencias sociales forenses. 
+    </h3>
+</sobremi>
+
+<style>
+    .image_container {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    body {
+        /* esto es la parte del fondo de la pagina*/
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        /*asta aca termina*/
+    }
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h1 {
+        margin: 4rem 5;
+    }
+    h1 {
+        margin: 2rem 0;
+    }
+
+    main {
+        margin: auto;
+        padding: 1em;
+        max-width: 60ch;
+    }
+
+    .text-gradient {
+        font-weight: 900;
+        background-image: var(--astro-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100% 200%;
+        background-position-y: 100%;
+        border-radius: 0.4rem;
+        animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+        0%,
+        100% {
+            background-position-y: 0%;
+        }
+        50% {
+            background-position-y: 80%;
+        }
+    }
+
+    .instructions {
+        line-height: 1.6;
+        margin: 1rem 0;
+        background: #4f39fa;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        color: var(--color-bg);
+    }
+
+    .instructions code {
+        font-size: 0.875em;
+        border: 0.1em solid var(--color-border);
+        border-radius: 4px;
+        padding: 0.15em 0.25em;
+    }
+
+    .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 1rem;
+        padding: 0;
+    }
+</style>
